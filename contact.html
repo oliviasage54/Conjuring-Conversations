@@ -8,19 +8,44 @@
       <title>Contact Us</title>
       <link rel="stylesheet" href="css/contactUs.css" type="text/css"/>
       <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
 
     <body>
       <!--Navigation Section-->
-      <div id="navDiv">
-        <ul id="navUL">
-            <div class="navItemDiv"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink">Home</a></li></div>
-            <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink">Episodes</a></li></div>
-            <div class="navItemDiv"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink">Meet the Team</a></li></div>
-            <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="contact.html" class="navLink">Contact</a></li></div>
-            <!--Shop tab placeholder-->
-        </ul>
-    </div>
+      <nav>
+        <div id="navDiv">
+          <ul id="navUL">
+              <div class="navItemDiv"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink">Home</a></li></div>
+              <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink">Episodes</a></li></div>
+              <div class="navItemDiv"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink">Meet the Team</a></li></div>
+              <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="contact.html" class="navLink">Contact</a></li></div>
+              <!--Shop tab placeholder-->
+          </ul>
+        </div>
+      </nav>
+
+      <div id="contactWrapper">
+        <!--Section for people to just write a quick message with name and email.-->
+        <div id="reachingOutDiv">
+          <h1>Just Reaching Out?</h1>
+          <h3>Write Us A Message Below.</h3>
+          <form action="" method="">
+            <label id="fullNameLabel">Full Name:</label>
+            <input type="text" name="name">
+            <label id="emailLabel">Email:</label>
+            <input type="email" name="email">
+            <label>Write Your Message Below</label>
+            <textarea name="message" id="textArea"></textarea>
+          </form>
+        </div>
+        <!--Section for people to submit a story.-->
+        <div id="submitStoryDiv">
+          <h1>Have a Story to Tell?</h1>
+          <h3>We Would Love to Hear From You</h3>
+        </div>
+      </div>
 
 
     </body>
