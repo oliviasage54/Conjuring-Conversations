@@ -1,9 +1,19 @@
+/*Global Style Attributes*/
+
 body{
     background-color: black;
 }
 
 p, h3, h4{
-    color: rgb(0, 0, 0);
+    color: white;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 26px;
 }
 
 /*Navigation Section*/
@@ -48,46 +58,46 @@ p, h3, h4{
 
 /* Member card class */
 .memberCard{
-    border: 2px solid white;
-    background-color: white;
-    margin-left: 200px;
-    margin-right: 200px;
-    border-radius: 5px;
-    margin-bottom: 40px;
-    height: 200px;
-    text-align: right;
-}
-
-.memberImages{
-    position: absolute;
+    height: 100%;
+    width: 16%;
+    text-align: center;
+    margin-left: 3%;
+    display: absolute;
     float: left;
+    overflow: hidden;
 }
 
 .memberName{
-    color: black;
-    font-size: 20px;
-    margin-right: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 8px;
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
 .memberPosition{
-    margin-right: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
 }
+
+.memberDescription{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+#teamSection{
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.memberImages{
+    margin: auto;
+    margin-top: 10px;
+} 
 
 .picture{
-    
-}
 
-h4{
-    font-size: 20px;
-}
-
-h3{
-    font-size: 26px;
-}
-
-p{
-    width: 600px;
-    float: right;
-    margin-right: 10px;
-    margin-top: 0;
 }
