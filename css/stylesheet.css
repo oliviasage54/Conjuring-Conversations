@@ -64,3 +64,28 @@ body{
     letter-spacing: .2em;
     word-spacing: .1em;
 }
+
+/*Content Section: Podcast Description and such*/
+/*Main divider containing the podcast overview description. In the future i would love to 
+overlap this div with the rotating art, but thats future state*/
+#mainDiv{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #FFFEF3;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+#podcastDescription{
+    text-align: center;
+    color: black;
+}
+
+#latestEpisodesDiv{
+    text-align: center;
+}
+
+#latestEpisodesHeader{
+    font-size: 36px;
+}
