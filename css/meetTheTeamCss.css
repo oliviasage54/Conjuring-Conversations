@@ -65,24 +65,27 @@ h3{
     display: absolute;
     float: left;
     overflow: hidden;
+    background-color: #FFFEF3;
 }
 
 .memberName{
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 8px;
     font-size: 28px;
-    text-transform: uppercase;
+    color: black;
 }
 
 .memberPosition{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
+    color: black;
 }
 
 .memberDescription{
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6em;
     font-size: 16px;
+    color: black;
 }
 
 #teamSection{
