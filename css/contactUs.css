@@ -6,7 +6,7 @@ body{
 #navDiv{
     width: 100%;
     height: 80px;
-    text-align: left;
+    text-align: center;
     padding-top: 10px;
 }
 
@@ -15,7 +15,7 @@ body{
     list-style: none;
     white-space: nowrap;
     padding: 0;
-    margin-left: 20%;
+    margin-left: 8%;
 }
 
 /*Divs for the individual tab items on the nav bar*/
@@ -39,6 +39,32 @@ body{
     font-family: 'Yomogi', cursive;
     letter-spacing: .2em;
     word-spacing: .25em;
+}
+
+/*animation section for the navigation*/
+a{
+    position: relative;
+}
+
+a:hover{
+    color: white;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::before{
+    transform: scaleX(1);
 }
 
 #contactWrapper{
@@ -76,7 +102,7 @@ label{
     border-radius: 10px;
 }
 
-h1, h3, label{
+h1, h2, h3, label{
     color: white;
     font-family: 'Yomogi', cursive;
     text-transform: uppercase;
@@ -96,4 +122,14 @@ h1, h3, label{
     width: 500px;
     margin-top: 6px;
     margin-bottom: 6px;
+}
+
+#fullNameLabel, #emailLabel{
+    display: inline;
+    font-size: 24px;
+}
+
+#emailInputDiv{
+    margin-bottom: 50px;
+    margin-left: 8.2%;
 }

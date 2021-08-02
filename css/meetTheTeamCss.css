@@ -20,9 +20,8 @@ h3{
 #navDiv{
     width: 100%;
     height: 80px;
-    text-align: left;
+    text-align: center;
     padding-top: 10px;
-    margin-bottom: 40px;
 }
 
 /*Unordered list containing the navigation tab info*/
@@ -30,7 +29,7 @@ h3{
     list-style: none;
     white-space: nowrap;
     padding: 0;
-    margin-left: 20%;
+    margin-left: 8%;
 }
 
 /*Divs for the individual tab items on the nav bar*/
@@ -56,21 +55,57 @@ h3{
     word-spacing: .25em;
 }
 
+/*animation section for the navigation*/
+a{
+    position: relative;
+}
+
+a:hover{
+    color: white;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::before{
+    transform: scaleX(1);
+}
+
 /* Member card class */
+#ryan, #sofi, #mike{
+    margin-left: 12.5%;
+}
+
+#olivia, #cameren{
+    margin-left: 8%;
+}
+
 .memberCard{
-    height: 100%;
-    width: 16%;
+    height: 400px;
+    width: 600px;
     text-align: center;
-    margin-left: 3%;
     display: absolute;
     float: left;
     overflow: hidden;
     background-color: #FFFEF3;
+    padding-right: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 .memberName{
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 8px;
+    margin-top: 50px;
     font-size: 28px;
     color: black;
 }
@@ -86,6 +121,7 @@ h3{
     line-height: 1.6em;
     font-size: 16px;
     color: black;
+    text-justify: inter-character;
 }
 
 #teamSection{
@@ -93,12 +129,12 @@ h3{
     width: 100%;
     margin: auto;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 60px;
 }
 
 .memberImages{
-    margin: auto;
-    margin-top: 10px;
+    float: left;
+    margin-top: 50px;
 } 
 
 .picture{
