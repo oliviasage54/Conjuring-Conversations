@@ -1,19 +1,5 @@
-/*Global Style Attributes*/
-
 body{
     background-color: black;
-}
-
-p, h3, h4{
-    color: white;
-}
-
-h4{
-    font-size: 20px;
-}
-
-h3{
-    font-size: 26px;
 }
 
 /*Navigation Section*/
@@ -83,75 +69,6 @@ a:hover::before{
 }
 
 
-
-
-/* Member card class */
-#ryan, #sofi, #mike{
-    margin-left: 200px;
-}
-
-#olivia, #cameren{
-    margin-left: 200px;
-}
-
-
-.memberCard{
-    height: 420px;
-    width: 600px;
-    text-align: center;
-    display: absolute;
-    float: left;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    padding-right: 45px;
-    margin-bottom: 100px;
-}
-
-.textDiv{
-    float: left;
-    position: relative;
-    width: 50%;
-}
-
-.pictureDiv{
-    float: left;
-    position: relative;
-    width: 50%;
-}
-
-.memberName{
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 50px;
-    font-size: 28px;
-    color: black;
-}
-
-.memberPosition{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    color: black;
-}
-
-.memberDescription{
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.6em;
-    font-size: 16px;
-    color: black;
-}
-
-#teamSection{
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    margin-top: 60px;
-}
-
-.memberImages{
-    float: left;
-    margin-top: 50px;
-} 
-
-.picture{
-
+#tempHeader{
+    color: white;
 }
