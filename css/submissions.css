@@ -6,8 +6,8 @@ body{
 #navDiv{
     width: 100%;
     height: 80px;
-    text-align: center;
     padding-top: 10px;
+    text-align: center;
 }
 
 /*Unordered list containing the navigation tab info*/
@@ -15,19 +15,20 @@ body{
     list-style: none;
     white-space: nowrap;
     padding: 0;
-    margin-left: 8%;
 }
 
 /*Divs for the individual tab items on the nav bar*/
 .navItemDiv{
     display: inline;
-    margin-right: 10%;
+    width: 200px;
+    margin: 60px;
 }
 
 /*List items for the individual tabs on the navigation*/
 .navTabLI{
     display: inline;
     white-space: nowrap;
+    text-align: center;
 }
 
 /*Links for the navigation tab pages*/
@@ -97,13 +98,12 @@ label{
 #submitStoryDiv{
     float: left;
     position: relative;
-    height: 500px;
+    height: 100%;
     width: 50%;
-    text-align: center;
     border-radius: 10px;
 }
 
-h1, h2, h3, label{
+h1, h2, h3, label, p{
     color: white;
     font-family: 'Yomogi', cursive;
     text-transform: uppercase;
@@ -111,14 +111,6 @@ h1, h2, h3, label{
 
 .submissionRequirementLI{
     color: white;
-    
-}
-
-#justReachingText{
-   
-}
-
-#writeUsMessageText{
     
 }
 
@@ -139,3 +131,48 @@ h1, h2, h3, label{
     margin-bottom: 50px;
     margin-left: 8.2%;
 }
+
+/*Form Styling*/
+.formLabel{
+    font-size: 22px;
+    margin-left: 14%;
+    margin-top: 2%;
+}
+
+.inputBox{
+    margin-left: 14%
+}
+
+#yesValue, #noValue, #storyTextArea{
+    margin-left: 14%;
+}
+
+#storyTextArea{
+    width: 500px;
+    height: 300px;
+}
+
+input[type=radio]{
+    border: 0px;
+    height: 1.8em;
+    width: 1.8em;
+}
+
+.value{
+    color: white;
+    display: inline;
+    font-size: 22px;
+    vertical-align: text-bottom;
+}
+
+input[type=submit] {
+    margin-left: 14%;
+    height: 40px;
+    width: 506px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Yomogi', cursive;
+    font-weight: bolder;
+}
+
