@@ -93,6 +93,7 @@ label{
     border-radius: 10px;
 }
 
+
 #submitStoryDiv{
     float: left;
     position: relative;
@@ -106,6 +107,11 @@ h1, h2, h3, label{
     color: white;
     font-family: 'Yomogi', cursive;
     text-transform: uppercase;
+}
+
+.submissionRequirementLI{
+    color: white;
+    
 }
 
 #justReachingText{
