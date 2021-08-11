@@ -1,4 +1,4 @@
-<?php include_once dbh.php;
+<?php // include_once dbh.php;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,8 +76,8 @@
             </div>
             <div id="taggingInputDiv">
               <label class="formLabel" id="taggingLabel">Would you like to be tagged on social media when your episode comes out?</label>
-              <input type="radio" name="taggingPreference" id="yesValue" value="Yes"><p class="value">Yes</p>
-              <input type="radio" name="taggingPreference" id="noValue" value="No"><P class="value">No</P>
+              <input type="radio" name="radio-yes" id="yesValue" value="Yes"><p class="value">Yes</p>
+              <input type="radio" name="radio-no" id="noValue" value="No"><P class="value">No</P>
             </div>
             <div id="storyInputDiv">
               <label class="formLabel" id="storyLabel">Tell us your story!</label>
