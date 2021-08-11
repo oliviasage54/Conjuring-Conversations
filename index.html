@@ -10,6 +10,9 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
     </head>
 
@@ -19,8 +22,8 @@
             <div id="navDiv">
                 <ul id="navUL">
                     <div class="navItemDiv"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink">Home</a></li></div>
-                    <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink">Episodes</a></li></div>
-                    <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink">Submissions</a></li></div>
+                    <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.php" class="navLink">Episodes</a></li></div>
+                    <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="submissions.php" class="navLink">Submissions</a></li></div>
                     <div class="navItemDiv"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink">About the Team</a></li></div>
                     <div class="navItemDiv"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink">Shop</a></li></div> 
                 </ul>
@@ -41,23 +44,35 @@
             </div>
             <!--social media links section-->
             <div id="findUsDiv">
-                <h1>Find us on social media!</h1>
+                <h1 id="findUsText">Find us on social media!</h1>
+                <a href="https://twitter.com/ConjuringConvos"><ion-icon name="logo-twitter" class="ionIcon"></ion-icon></a>
+                <a href="https://www.instagram.com/conjuringconversations/"><ion-icon name="logo-instagram" class="ionIcon"></ion-icon></a>
+                <a href="https://www.tiktok.com/@conjuringconversations?lang=en"><ion-icon name="logo-tiktok" class="ionIcon"></ion-icon></a>
+                <a href="https://www.facebook.com/ConjuringConversations"><ion-icon name="logo-facebook" class="ionIcon"></ion-icon></a>
             </div>
             <!--Trailer, teaser, latest episodes section-->
             <div id=listenNowDiv>
                 <div id="latestEpisodesDiv">
                     <h3 id="latestEpisodesHeader">Check out our latest episodes</h3>
                     <!--My idea here is to always keeo the trailer episode in the top left of the grid so this stays constant-->
-                    <div id="trailerEpisodeDiv">
-        
+                    <div id="episodeObjectWrapper">
+                        <div id="episodeImageWrapper">
+                            <a href="#">
+                                <img width="" height="" src="" alt="image text here">
+                            </a>
+                        </div>
+                        <div id="episodePostTextWrapper">
+                            <h3 id="episodeTitle">Episode 1</h3>
+                            <h5 id="episodeDescrip">This episode is about blah..</h5>
+                            <h5 id="releaseDate">01/01/0001</h5>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <footer id="footer">
-
-        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
