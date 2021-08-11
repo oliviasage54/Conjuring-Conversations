@@ -81,14 +81,17 @@ overlap this div with the rotating art, but thats future state*/
 #podcastDescription{
     text-align: center;
     color: black;
+    font-family: 'Special Elite', cursive;
 }
 
 #latestEpisodesDiv{
     text-align: center;
 }
 
-#latestEpisodesHeader{
+#latestEpisodesHeader, #findUsText{
     font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Yomogi', cursive;
 }
 
 /*animation section for the navigation*/
@@ -121,14 +124,24 @@ a:hover::before{
 /*Main Content!*/
 h1, h3{
     color: white;
+    font-weight: lighter;
 }
 
 #findUsDiv{
     height: 200px;
     text-align: center;
+    margin-top: 80px;
 }
 
 #listenNowDiv{
     height: 800px;
     text-align: center;
+}
+
+.ionIcon{
+    color: white;
+    font-size: 60px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
 }
