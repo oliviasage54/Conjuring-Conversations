@@ -2,6 +2,31 @@
 
 body{
    background-color: black;
+   margin: 0;
+}
+
+/*Changing the scrollbar*/
+body::-webkit-scrollbar {
+    width: 1em;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px darkgrey;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #e0e8d4;
+    outline: 1px solid darkgrey;
+}
+
+/*Main Content!*/
+h1, h3{
+    color: white;
+    font-weight: lighter;
+}
+
+#mainContent{
+    margin-top: 0;
 }
 
 /*Navigation Section*/
@@ -35,7 +60,7 @@ body{
 
 /*Links for the navigation tab pages*/
 .navLink{
-    color: white;
+    color: #e0e8d4;
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: none;
@@ -47,43 +72,44 @@ body{
 /*Main content and welcome banner*/
 #welcomeDiv{
     width: 100%;
-    height: 500px;
-    border: 2px solid white;
+    height: 600px;
     border-radius: 8px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
-#welcomeHeader{
-    color: white;
-    letter-spacing: .2em;
-    word-spacing: .1em;
-    font-size: 30px;
-}
-
-#welcomeText{
-    color: white;
-    letter-spacing: .2em;
-    word-spacing: .1em;
+#skelly{
+    max-height: 600px;
+    overflow: hidden;
 }
 
 /*Content Section: Podcast Description and such*/
 /*Main divider containing the podcast overview description. In the future i would love to 
 overlap this div with the rotating art, but thats future state*/
+#descriptionDivWrapper{
+    height: 300px;
+    background-color: #e0e8d4; 
+    width: 100%;
+    margin-top: 0px;
+    margin: 0 auto;
+}
+/*Contains the about paragraphs Sofi wrote*/
 #descriptionDiv{
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #FFFEF3;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 40px;
+    background-color: #e0e8d4;
+    height: 250px;
+    padding-top: 20px;
 }
 
+/*First Description paragraph, separated for ease of reading*/
 #podcastDescriptionP1{
     text-align: center;
     color: black;
     font-family: 'Special Elite', cursive;
 }
 
+/*Second Description Paragraph*/
 #podcastDescriptionP2{
     text-align: center;
     color: black;
@@ -91,32 +117,139 @@ overlap this div with the rotating art, but thats future state*/
     margin-top: 6px;
 }
 
+/*Div for the latest episodes and streaming service links*/
+#listenNowDiv{
+    height: 700px;
+    text-align: center;
+}
+
+.listenDiv{
+    height: 100px;
+    width: 260px;
+}
+
+/*Div for previewing the soundcloud embed of the latest episode*/
 #latestEpisodesDiv{
     text-align: center;
+    height: 500px;
+}
+
+/*Text for Checking out the latest episode*/
+#latestEpisodesHeader{
+    font-size: 44px;
+    text-transform: uppercase;
+    font-family: 'Yomogi', cursive;
+    color: #e0e8d4;
+    margin-bottom: 20px;
+}
+
+/*Text for link to get to the episodes page*/
+#allEpisodes{
+    font-family: 'Yomogi', cursive;
+    color: #e0e8d4; 
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/*Link for the episodes page*/
+#allEpisodesLink{
+   text-decoration: none;
 }
 
 #findUsText, .header1{
     font-size: 36px;
     text-transform: uppercase;
     font-family: 'Yomogi', cursive;
+    color: #e0e8d4;
 }
 
-#latestEpisodesHeader{
-    font-size: 44px;
-    text-transform: uppercase;
-    font-family: 'Yomogi', cursive;
+/*Streaming services wrapper div*/
+#streamingServicesWrapper{
+    height: 200px;
+    width: 100%;
 }
 
-/*animation section for the navigation*/
+/*List for the streaming services*/
+#streamingDiv{
+
+}
+
+/*Divs for the individual streaming services section*/
+.listenDiv{
+    display: inline;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/*Links for the streaming services*/
+.listenLink{
+    text-decoration: none;
+}
+
+/*Styling pulled from the apple podcast iframe embed*/
+#applePodcastLink{
+    color: white;
+    display: inline;
+    overflow: hidden;
+    border-radius: 13px;
+    width: 250px;
+    height: 83px;
+    margin-bottom: 10px;
+}
+
+#spotifyButton{
+    color: black;
+    background-color: white;
+    border-radius: 13px;
+    height: 63px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: none;
+}
+
+#soundcloudButton{
+    color: black;
+    background-color: white;
+    border-radius: 13px;
+    height: 63px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: none;
+}
+
+/*More styling for the apple podcast embed*/
+#applePodcastImage{
+    border-radius: 13px;
+    width: 250px;
+    height: 83px;
+}
+/*Social media div*/
+#findUsDiv{
+    height: 500px;
+    text-align: center;
+}
+
+/*Style for social links and any other icons used*/
+.ionIcon{
+    color: #e0e8d4;
+    font-size: 60px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+/*animation section for links and navigation*/
 a{
     position: relative;
 }
 
-a:hover{
+.navLink:hover{
     color: white;
 }
 
-a::before{
+.navLink::before{
     content: "";
     position: absolute;
     display: block;
@@ -129,85 +262,13 @@ a::before{
     transition: transform 0.3s ease;
 }
 
-a:hover::before{
+.navLink:hover::before{
     transform: scaleX(1);
 }
 
+/*NOT CURRENTLY IN USE - DELETE ON CONSENSUS!*/
 
-/*Main Content!*/
-h1, h3{
-    color: white;
-    font-weight: lighter;
-}
-
-#findUsDiv{
-    height: 200px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-#listenNowDiv{
-    height: 800px;
-    text-align: center;
-}
-
-.ionIcon{
-    color: white;
-    font-size: 60px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 10px;
-}
-
-/*Streaming Service Connection Section*/
-#streamingServicesWrapper{
-    height: 500px;
-    width: 100%;
-    text-align: center;
-}
-
-#applePodcastLink{
-    color: white;
-    display: block;
-    overflow: hidden;
-    border-radius: 13px;
-    width: 250px;
-    height: 83px;
-    margin-bottom: 10px;
-}
-
-#applePodcastImage{
-    border-radius: 13px;
-    width: 250px;
-    height: 83px;
-}
-
-#promoEpisodeBadge, #trailerEpisodeBadge{
-    width: 40%;
-    margin-bottom: 6px;
-    margin-right: 10px;
-}
-
-/*Episode Styling*/
-#episodeObjectWrapper{
-    background-color: white;
-    height: 500px;
-    width: 300px;
-    margin-left: 10px;
-    text-align: center;
-}
-
-#episodeImageWrapper{
-    height: 300px;
-    width: 300px;
-}
-
-#episodePostTextWrapper{
-    width: 300px;
-    height: 200px;
-}
-
-#apple, #spotify{
+/*#apple, #spotify{
     display: block;
     width: 100%;
     text-align: left;
@@ -254,4 +315,4 @@ h1, h3{
 
 #iconSpan{
     
-}
+}*/

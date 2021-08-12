@@ -1,6 +1,21 @@
 body{
     background-color: black;
+    margin: 0;
 }
+
+/*Changing the scrollbar
+body::-webkit-scrollbar {
+    width: 1em;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px darkgrey;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #636b57;
+    outline: 1px solid darkgrey;
+}*/
 
 /*Navigation Section*/
 #navDiv{
@@ -47,11 +62,11 @@ a{
     position: relative;
 }
 
-a:hover{
+.navLink:hover{
     color: white;
 }
 
-a::before{
+.navLink::before{
     content: "";
     position: absolute;
     display: block;
@@ -64,14 +79,11 @@ a::before{
     transition: transform 0.3s ease;
 }
 
-a:hover::before{
+.navLink:hover::before{
     transform: scaleX(1);
 }
 
 #contactWrapper{
-    padding-top: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 label{
@@ -85,33 +97,43 @@ label{
     width: 500px;
 }
 
-#reachingOutDiv{
-    float: left;
-    position: relative;
-    width: 50%;
-    height: 500px;
+#submissionWarning{
+    padding-top: 8px;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 300px;
     text-align: center;
-    border-radius: 10px;
+    background-color: #e0e8d4;
 }
 
+.expectationsText, .submissionRequirementLI{
+    color: black;
+}
 
 #submitStoryDiv{
-    float: left;
-    position: relative;
-    height: 100%;
-    width: 50%;
-    border-radius: 10px;
+    height: 500px;
 }
 
-h1, h2, h3, label, p{
+h1, h2, label, p, h6{
     color: white;
     font-family: 'Yomogi', cursive;
     text-transform: uppercase;
 }
 
-.submissionRequirementLI{
-    color: white;
-    
+#expectationsDisclaimer{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Yomogi', cursive;
+}
+
+#expectations{
+    background: white;
+    padding-top: 8px;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 300px;
+    width: 100%;
 }
 
 /*Input Styling for left side*/
