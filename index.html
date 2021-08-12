@@ -22,8 +22,8 @@
             <div id="navDiv">
                 <ul id="navUL">
                     <div class="navItemDiv"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink">Home</a></li></div>
-                    <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.php" class="navLink">Episodes</a></li></div>
-                    <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="submissions.php" class="navLink">Submissions</a></li></div>
+                    <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink">Episodes</a></li></div>
+                    <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink">Submissions</a></li></div>
                     <div class="navItemDiv"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink">About the Team</a></li></div>
                     <div class="navItemDiv"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink">Shop</a></li></div> 
                 </ul>
@@ -38,9 +38,11 @@
 
         <section id="mainContent">
             <div id="descriptionDiv">
-                <h1 id="podcastDescription">Hello fellow ghosts and ghouls! We are the Conjuring Conversations Podcast, and we aim to 
-                    provide authentic paranormal experience stories in collaboration with listeners like you.
-                </h1>
+                <h1 id="podcastDescriptionP1">Hello fellow conjurers! We are the Conjuring Conversations Podcast, and we aim to explore authentic paranormal experience stories in collaboration with listeners like you.
+                    We exist because of many things — unemployment, journalistic integrity, and a love for the 12 ft Home Depot skeleton (this is NOT an ad but we are open to negotiations, Home Depot).</h1>
+
+                <h1 id="podcastDescriptionP2">Every other week, we want to entertain you. We want to spook you with tales from beyond the veil, make you question what's hiding in the shadows, and bring you closer to the spirit world. 
+                    But our larger purpose — why the Conjuring Conversations team embarked on this project — is to legitimize a subject that is often discounted as fantasy or untruth. We want this podcast to be a safe space for people with paranormal experiences. </h1>
             </div>
             <!--social media links section-->
             <div id="findUsDiv">
@@ -54,7 +56,7 @@
             <div id=listenNowDiv>
                 <div id="latestEpisodesDiv">
                     <h3 id="latestEpisodesHeader">Check out our latest episodes</h3>
-                    <!--My idea here is to always keeo the trailer episode in the top left of the grid so this stays constant-->
+                    <!--My idea here is to always keeo the trailer episode in the top left of the grid so this stays constant
                     <div id="episodeObjectWrapper">
                         <div id="episodeImageWrapper">
                             <a href="#">
@@ -67,11 +69,30 @@
                             <h5 id="releaseDate">01/01/0001</h5>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>-->
 
-            <div id="applePodcastBadge">
-                <a href="https://podcasts.apple.com/us/podcast/conjuring-conversations-podcast/id1580462687?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/mono-white/en-us?size=250x83&amp;releaseDate=1624572900&h=da8c1183774d6452267869232a445a52" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+                <div id="streamingServicesWrapper">
+                    <div id="apple">
+                        <!--<h1 class="header1">Apple Podcast</h1>-->
+                        <div id="applePodcastBadge">
+                            <a id="appleButtonLink" href="#">Listen On Apple Podcasts<span id="iconSpan"><ion-icon id=ioniconArrow" name="arrow-forward-outline"></ion-icon></span></a>
+                            <!--<a id="applePodcastLink" href="https://podcasts.apple.com/us/podcast/conjuring-conversations-podcast/id1580462687?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1"><img id="applePodcastImage" src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/mono-white/en-us?size=250x83&amp;releaseDate=1624572900&h=da8c1183774d6452267869232a445a52" alt="Listen on Apple Podcasts"></a>-->
+                            <iframe src="https://embed.podcasts.apple.com/us/podcast/conjuring-conversations-podcast/id1580462687?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=light" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
+                        </div>
+                    </div>
+                    <div id="spotify">
+                        <!--<h1 class="header1">Spotify</h1>-->
+                        <div id="spotifyBadgeDiv">
+                            <a id="spotifyButtonLink" href="https://open.spotify.com/show/03aVArFNsn2hsenuJp0aYc?si=qu_cM9J1RWi5qCibL_AK9Q&dl_branch=1">Listen On Spotify<ion-icon id=ioniconArrow" name="arrow-forward-outline"></ion-icon></a>
+                            <iframe id="trailerEpisodeBadge" src="https://open.spotify.com/embed/episode/1ZtlwOBWV6R2gHtbL4JJyB?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe id="promoEpisodeBadge" src="https://open.spotify.com/embed/show/03aVArFNsn2hsenuJp0aYc" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fakeFooter">
+
+                </div>
             </div>
 
         </section>
