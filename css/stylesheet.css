@@ -5,20 +5,6 @@ body{
    margin: 0;
 }
 
-/*Changing the scrollbar*/
-body::-webkit-scrollbar {
-    width: 1em;
-}
-   
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px darkgrey;
-}
-   
-body::-webkit-scrollbar-thumb {
-    background-color: #e0e8d4;
-    outline: 1px solid darkgrey;
-}
-
 /*Main Content!*/
 h1, h3{
     color: white;
@@ -119,19 +105,14 @@ overlap this div with the rotating art, but thats future state*/
 
 /*Div for the latest episodes and streaming service links*/
 #listenNowDiv{
-    height: 700px;
+    height: 1000px;
     text-align: center;
-}
-
-.listenDiv{
-    height: 100px;
-    width: 260px;
 }
 
 /*Div for previewing the soundcloud embed of the latest episode*/
 #latestEpisodesDiv{
     text-align: center;
-    height: 500px;
+    height: 550px;
 }
 
 /*Text for Checking out the latest episode*/
@@ -165,19 +146,17 @@ overlap this div with the rotating art, but thats future state*/
 
 /*Streaming services wrapper div*/
 #streamingServicesWrapper{
-    height: 200px;
+    height: 350px;
     width: 100%;
-}
-
-/*List for the streaming services*/
-#streamingDiv{
-
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 /*Divs for the individual streaming services section*/
 .listenDiv{
-    display: inline;
+    display: BLOCK;
     text-decoration: none;
+    margin-bottom: 20px;
     margin-right: 20px;
 }
 
@@ -194,27 +173,28 @@ overlap this div with the rotating art, but thats future state*/
     border-radius: 13px;
     width: 250px;
     height: 83px;
-    margin-bottom: 10px;
+}
+
+#spotifyPodcastLink, #soundcloudLink{
+    display: inline;
 }
 
 #spotifyButton{
     color: black;
-    background-color: white;
+    background-color: #e0e8d4;
     border-radius: 13px;
     height: 63px;
     width: 250px;
-    margin-bottom: 10px;
     font-size: 30px;
     border: none;
 }
 
 #soundcloudButton{
     color: black;
-    background-color: white;
+    background-color: #e0e8d4;
     border-radius: 13px;
     height: 63px;
     width: 250px;
-    margin-bottom: 10px;
     font-size: 30px;
     border: none;
 }
@@ -227,8 +207,9 @@ overlap this div with the rotating art, but thats future state*/
 }
 /*Social media div*/
 #findUsDiv{
-    height: 500px;
+    height: 300px;
     text-align: center;
+    margin-top: 20px;
 }
 
 /*Style for social links and any other icons used*/
@@ -265,54 +246,3 @@ a{
 .navLink:hover::before{
     transform: scaleX(1);
 }
-
-/*NOT CURRENTLY IN USE - DELETE ON CONSENSUS!*/
-
-/*#apple, #spotify{
-    display: block;
-    width: 100%;
-    text-align: left;
-    margin-left: 10%;
-}
-
-#spotify{
-    margin-top: 40px;
-}
-
-#spotifyButtonLink{
-    width: 300px;
-    height: 50px;
-    border: none;
-    color: white;
-    font-size: 30px;
-    display: block;
-    margin-bottom: 16px;
-    font-family: 'Yomogi', cursive;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-#appleButtonLink{
-    width: 400px;
-    height: 50px;
-    border: none;
-    color: white;
-    font-size: 30px;
-    display: block;
-    margin-bottom: 16px;
-    font-family: 'Yomogi', cursive;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-
-#ion-icon{
-    color: white;
-    display: inline-block;
-    font-size: 24px;
-    margin-left: 6px;
-}
-
-#iconSpan{
-    
-}*/

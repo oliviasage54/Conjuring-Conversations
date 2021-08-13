@@ -1,3 +1,6 @@
+<?php 
+include_once dbh.php;
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,8 +8,8 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <title>Shop</title>
-      <link rel="stylesheet" href="css/shop.css" type="text/css"/>
+      <title>Episodes</title>
+      <link rel="stylesheet" href="css/episodesCss.css" type="text/css"/>
       <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
     </head>
 
@@ -24,8 +27,12 @@
         </div>
       </nav>
 
-      <div id="logoDiv">
-        <img src="images/something-coming.png" alt="Conjuring Conversations Logo, Something is coming!">
+      <div id="streamingLinksWrapper">
+        <!--<div>
+          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEwMDAzODkyNDEvc291bmRzLnJzcw">
+            <img src="https://www.gstatic.com/podcasts_console/promote/English_EN/EN_Google_Podcasts_Badge.svg" width="150" height="38" alt="Listen on Google Podcasts">
+          </a>
+        </div>-->
       </div>
       
         
