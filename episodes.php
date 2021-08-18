@@ -27,13 +27,18 @@ include_once dbh.php;
         </div>
       </nav>
 
-      <div id="streamingLinksWrapper">
-        <!--<div>
-          <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEwMDAzODkyNDEvc291bmRzLnJzcw">
-            <img src="https://www.gstatic.com/podcasts_console/promote/English_EN/EN_Google_Podcasts_Badge.svg" width="150" height="38" alt="Listen on Google Podcasts">
-          </a>
-        </div>-->
+      <div class="episodeTileWrapper">
+        <div class="episodeImageDiv">
+          <img src="" alt="episode title here" width="300" height="300">
+        </div>
+        <div class="episodeDescripDiv">
+          <h3 class="episodeText">Episode Title Here</h3> 
+          <h6 class="episodeText">Episode Description/Show notes</h6>
+          <!--Release date goes below-->
+          <date class="episodeText">00/00/0000</date>
+        </div>
       </div>
+
       
         
 
