@@ -1,0 +1,157 @@
+/*This is the universal css stylesheet that contains the navigation styling and overall 
+consistent styling across the website. it is imported to every other css file. */
+*{
+    box-sizing: border-box;
+}
+
+/*For Mobile Devices*/
+[class*="col-"]{
+    float: left;
+    width: 100%;
+}
+
+/*For Tablet/Medium Devices*/
+@media only screen and (min-width: 600px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*For Desktop/Large Devices*/
+@media only screen and (min-width: 768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.row{
+    width: 100%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{
+   background-color: black;
+   margin: 0;
+   text-align: center;
+}
+
+/*Navigation Section*/
+/*Ionicon/menu button for the mobile sized screen. Only display on viewports w/ max width of 600px*/
+.mobileMenu{
+    display: none;
+    font-size: 40px;
+    padding-left: 80%;
+    padding-top: 5%;
+    color: #e0e8d4;
+}
+
+/*Div element containing all of the nav*/
+.navDiv{
+    width: 100%;
+    height: 80px;
+}
+
+/*Unordered list containing the navigation tab info*/
+.navUL{
+    list-style: none;
+    white-space: nowrap;
+    padding: 0;
+}
+
+/*Divs for the individual tab items on the nav bar*/
+.navItemDiv{
+    display: inline;
+    width: 200px;
+    margin: 60px;
+}
+
+/*List items for the individual tabs on the navigation*/
+.navTabLI{
+    display: inline;
+    white-space: nowrap;
+}
+
+/*Links for the navigation tab pages*/
+.navLink{
+    color: #e0e8d4;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Yomogi', cursive;
+    letter-spacing: .2em;
+    word-spacing: .25em;
+}
+
+/*animation section for links and navigation*/
+a{
+    position: relative;
+}
+
+.navLink:hover{
+    color: white;
+}
+
+.navLink::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navLink:hover::before{
+    transform: scaleX(1);
+}
+
+/*Mobile and Small Viewports*/
+@media only screen and (max-width: 600px){
+    /*Display the menu button*/
+    .mobileMenu{
+        display: block;
+    }
+
+    /*Do not display menu unless triggered by event handler (will write JS later)*/
+    .navDiv{
+        display: none;
+    }
+
+    .navExpanded{
+        display: block;
+    }
+}
+
+/*Style for social links and any other icons used*/
+.ionIcon{
+    color: #e0e8d4;
+    font-size: 60px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
+}

@@ -1,0 +1,9 @@
+/*This is the stylesheet for the episodes page*/
+@import "universal.css";
+
+
+/*Episode Tile Styling*/
+.episodeTileWrapper{
+    background-color: red;
+}
+
