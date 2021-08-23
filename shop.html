@@ -11,25 +11,32 @@
     </head>
 
     <body>
+      <!--mobile menu opener-->
+      <span class="mobileMenu"><ion-icon name="menu-sharp"></ion-icon></span>
       <!--Navigation Section-->
-      <nav>
-        <div id="navDiv">
-          <ul id="navUL">
-            <div class="navItemDiv"><li id="homePageLI" class="navTabLI"><a href="index.php" class="navLink">Home</a></li></div>
-            <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.php" class="navLink">Episodes</a></li></div>
-            <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="submissions.php" class="navLink">Submissions</a></li></div>
+      <div class="navDiv row">
+        <ul class="navUL col-12">
+            <div class="navItemDiv"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink">Home</a></li></div>
+            <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink">Episodes</a></li></div>
+            <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink">Submissions</a></li></div>
             <div class="navItemDiv"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink">About the Team</a></li></div>
-            <div class="navItemDiv"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink">Shop</a></li></div>
-          </ul>
-        </div>
-      </nav>
+            <div class="navItemDiv"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink">Shop</a></li></div> 
+        </ul>
+      </div>
 
-      <div id="logoDiv">
-        <img src="images/something-coming.png" alt="Conjuring Conversations Logo, Something is coming!">
+      <div id="logoDiv" class="row">
+        <div class="col-12">
+          <picture>
+            <source srcset="images/something-coming.png" width="203" height="158.667" media="(max-width: 600px)">
+            <img src="images/something-coming.png" alt="Something is Coming Logo">
+        </picture>
+        </div>
+       <!--<img src="images/something-coming.png" alt="Conjuring Conversations Logo, Something is coming!">-->
       </div>
       
         
-
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>

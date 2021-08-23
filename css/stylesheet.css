@@ -1,123 +1,188 @@
-@import "contactUs.css";
+/*This is the stylesheet for the index.php/ home page*/
+@import "universal.css";
 
-body{
-   background-color: black;
-   margin: 0;
+*{
+    text-align: center;
 }
 
-/*Main Content!*/
 h1, h3{
     color: white;
     font-weight: lighter;
 }
 
-#mainContent{
-    margin-top: 0;
-}
-
-/*Navigation Section*/
-#navDiv{
-    width: 100%;
-    height: 80px;
-    padding-top: 10px;
-    text-align: center;
-}
-
-/*Unordered list containing the navigation tab info*/
-#navUL{
-    list-style: none;
-    white-space: nowrap;
-    padding: 0;
-}
-
-/*Divs for the individual tab items on the nav bar*/
-.navItemDiv{
-    display: inline;
-    width: 200px;
-    margin: 60px;
-}
-
-/*List items for the individual tabs on the navigation*/
-.navTabLI{
-    display: inline;
-    white-space: nowrap;
-    text-align: center;
-}
-
-/*Links for the navigation tab pages*/
-.navLink{
-    color: #e0e8d4;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Yomogi', cursive;
-    letter-spacing: .2em;
-    word-spacing: .25em;
-}
-
-/*Main content and welcome banner*/
+/*welcome banner*/
 #welcomeDiv{
     width: 100%;
-    height: 600px;
     border-radius: 8px;
-    text-align: center;
     margin-bottom: 0px;
 }
 
-#skelly{
+.skelly{
     max-height: 600px;
     overflow: hidden;
+}
+
+.responsiveLogo{
+    width: 304.5px;
+    height: 238px;
+    display: inline;
 }
 
 /*Content Section: Podcast Description and such*/
 /*Main divider containing the podcast overview description. In the future i would love to 
 overlap this div with the rotating art, but thats future state*/
-#descriptionDivWrapper{
-    height: 300px;
-    background-color: #e0e8d4; 
-    width: 100%;
-    margin-top: 0px;
+.descriptionDivWrapper{
+    background-color: #e0e8d4;
     margin: 0 auto;
+    margin-top: 0px;
 }
+
 /*Contains the about paragraphs Sofi wrote*/
-#descriptionDiv{
+.descriptionDiv{
     margin-left: 10%;
     margin-right: 10%;
     background-color: #e0e8d4;
-    height: 250px;
-    padding-top: 20px;
 }
 
-/*First Description paragraph, separated for ease of reading*/
-#podcastDescriptionP1{
-    text-align: center;
+/*Description Paragraphs*/
+#podcastDescriptionP1, #podcastDescriptionP2{
     color: black;
     font-family: 'Special Elite', cursive;
 }
 
-/*Second Description Paragraph*/
-#podcastDescriptionP2{
-    text-align: center;
-    color: black;
-    font-family: 'Special Elite', cursive;
-    margin-top: 6px;
+/*Mobile and Small Viewports*/
+@media only screen and (max-width: 600px){
+    /*Display the menu button*/
+    .mobileMenu{
+        display: block;
+    }
+
+    /*Do not display menu unless triggered by event handler (will write JS later)*/
+    .navDiv{
+        display: none;
+    }
+
+    .navExpanded{
+        display: block;
+    }
+
+    /*First Description paragraph, separated for ease of reading*/
+    #podcastDescriptionP1, #podcastDescriptionP2{
+        font-size: 20px;
+    }
+
+    .descriptionDivWrapper{
+        height: auto;
+        margin-top: 0;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .descriptionDiv{
+        height: auto;
+    }
+
+    #welcomeDiv{
+        height: 240px;
+    }
+
+    #latestEpisodesHeader{
+        font-size: 30px;
+    }
+
+    #streamingServicesWrapper{
+        height: auto;
+    }
+
+    #allEpisodes, #allEpisodesLink{
+        font-size: 20px;
+    } 
+
+    #findUsText{
+        font-size: 30px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #findUsDiv{
+        margin-top: 0px;
+        height: 200px;
+    }
+
+    .socialLinks{
+        font-size: 30px;
+        display: inline;
+        margin-bottom: 10px;
+    }
+
 }
 
-/*Div for the latest episodes and streaming service links*/
-#listenNowDiv{
-    height: 1000px;
-    text-align: center;
+/*Medium and Large ViewPorts*/
+@media only screen and (min-width: 600px){
+    /*First Description paragraph, separated for ease of reading*/
+    #podcastDescriptionP1, #podcastDescriptionP2{
+        font-size: 26px;
+    }
+
+    #welcomeDiv{
+        height: 600px;
+    }
+
+    .descriptionDivWrapper{
+        height: auto;
+        margin-top: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .descriptionDiv{
+        height: auto;
+    }
+
+    #listenNowDiv{
+        height: auto;
+    }
+
+    .listenDiv{
+        display: inline;
+    }
+
+    #allEpisodes, #allEpisodesLink, #findUsText{
+        font-size: 40px;
+    }
+
+    #latestEpisodesHeader{
+        font-size: 46px;
+    }
+
+    #streamingServicesWrapper{
+        height: auto;
+    }
+
+    #findUsDiv{
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 0px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .socialLinks{
+        font-size: 30px;
+        display: inline;
+    }
 }
 
-/*Div for previewing the soundcloud embed of the latest episode*/
-#latestEpisodesDiv{
-    text-align: center;
-    height: 550px;
+.socials{
+    display: inline;
+}
+
+.streams > div{
+    vertical-align: middle;
 }
 
 /*Text for Checking out the latest episode*/
 #latestEpisodesHeader{
-    font-size: 44px;
     text-transform: uppercase;
     font-family: 'Yomogi', cursive;
     color: #e0e8d4;
@@ -128,7 +193,6 @@ overlap this div with the rotating art, but thats future state*/
 #allEpisodes{
     font-family: 'Yomogi', cursive;
     color: #e0e8d4; 
-    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -138,7 +202,6 @@ overlap this div with the rotating art, but thats future state*/
 }
 
 #findUsText, .header1{
-    font-size: 36px;
     text-transform: uppercase;
     font-family: 'Yomogi', cursive;
     color: #e0e8d4;
@@ -146,15 +209,12 @@ overlap this div with the rotating art, but thats future state*/
 
 /*Streaming services wrapper div*/
 #streamingServicesWrapper{
-    height: 350px;
     width: 100%;
-    text-align: center;
     margin-bottom: 0px;
 }
 
 /*Divs for the individual streaming services section*/
 .listenDiv{
-    display: BLOCK;
     text-decoration: none;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -187,6 +247,7 @@ overlap this div with the rotating art, but thats future state*/
     width: 250px;
     font-size: 30px;
     border: none;
+    cursor: pointer;
 }
 
 #soundcloudButton{
@@ -197,6 +258,7 @@ overlap this div with the rotating art, but thats future state*/
     width: 250px;
     font-size: 30px;
     border: none;
+    cursor: pointer;
 }
 
 /*More styling for the apple podcast embed*/
@@ -204,45 +266,4 @@ overlap this div with the rotating art, but thats future state*/
     border-radius: 13px;
     width: 250px;
     height: 83px;
-}
-/*Social media div*/
-#findUsDiv{
-    height: 300px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/*Style for social links and any other icons used*/
-.ionIcon{
-    color: #e0e8d4;
-    font-size: 60px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 10px;
-}
-
-/*animation section for links and navigation*/
-a{
-    position: relative;
-}
-
-.navLink:hover{
-    color: white;
-}
-
-.navLink::before{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.navLink:hover::before{
-    transform: scaleX(1);
 }

@@ -1,76 +1,5 @@
-body{
-    background-color: black;
-    margin: 0;
-}
-
-/*Navigation Section*/
-#navDiv{
-    width: 100%;
-    height: 80px;
-    padding-top: 10px;
-    text-align: center;
-}
-
-/*Unordered list containing the navigation tab info*/
-#navUL{
-    list-style: none;
-    white-space: nowrap;
-    padding: 0;
-}
-
-/*Divs for the individual tab items on the nav bar*/
-.navItemDiv{
-    display: inline;
-    width: 200px;
-    margin: 60px;
-}
-
-/*List items for the individual tabs on the navigation*/
-.navTabLI{
-    display: inline;
-    white-space: nowrap;
-    text-align: center;
-}
-
-/*Links for the navigation tab pages*/
-.navLink{
-    color: #e0e8d4;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Yomogi', cursive;
-    letter-spacing: .2em;
-    word-spacing: .25em;
-}
-
-/*animation section for the navigation*/
-a{
-    position: relative;
-}
-
-.navLink:hover{
-    color: white;
-}
-
-.navLink::before{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.navLink:hover::before{
-    transform: scaleX(1);
-}
-
-#contactWrapper{
-}
+/*This is the stylesheet for the submissions page.*/
+@import "universal.css";
 
 label{
     display: block;
@@ -84,10 +13,10 @@ label{
 }
 
 #submissionWarning{
-    padding-top: 8px;
+    /*padding-top: 8px;
     padding-left: 200px;
-    padding-right: 200px;
-    height: 300px;
+    padding-right: 200px;*/
+    height: auto;
     text-align: center;
     background-color: #e0e8d4;
 }
@@ -97,7 +26,7 @@ label{
 }
 
 #submitStoryDiv{
-    height: 1000px;
+    height: auto;
 }
 
 h1, h2, p, h6, h3{
@@ -114,7 +43,7 @@ label{
 
 #expectationsDiv{
     padding-top: 8px;
-    height: 300px;
+    height: auto;
     width: 100%;
     text-align: center;
 }
@@ -123,19 +52,15 @@ label{
     color: white;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
-    padding-left: 300px;
-    padding-right: 300px;
 }
 
 #dontFret{
     color: white;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
-/*Input Styling for left side*/
+/*Input Styling*/
 .inputBox{
     height: 40px;
     width: 500px;
@@ -143,38 +68,25 @@ label{
     margin-bottom: 6px;
 }
 
-#fullNameLabel, #emailLabel{
-    display: inline;
-    font-size: 24px;
-}
-
-#taggingLabel{
-
-}
-
-#emailInputDiv{
-    margin-bottom: 50px;
-    margin-left: 8.2%;
-}
-
 /*Form Styling*/
 .formLabel{
     font-size: 22px;
     margin: auto;
     margin-top: 2%;
+    text-align: left;
+}
+
+.empty{
+    display: block;
 }
 
 .inputBox{
-    margin: auto;
+    width: 100%;
 }
 
+/*Radio Buttons*/
 #yesValue, #noValue{
     margin-left: 2%;
-}
-
-#storyTextArea{
-    width: 500px;
-    height: 300px;
 }
 
 input[type=radio]{
@@ -190,9 +102,23 @@ input[type=radio]{
     vertical-align: text-bottom;
 }
 
-input[type=submit] {
+/*Styling the form*/
+.formDiv{
+    width: 100%;
+}
+
+/*Story input and submit button*/
+#storyLabel{
+    font-size: 30px;
+}
+
+#storyTextArea{
+    height: 200px;
+    width: 100%;
+} 
+
+#submitButton{
     height: 40px;
-    width: 506px;
     margin-bottom: 20px;
     font-size: 22px;
     text-transform: uppercase;
@@ -200,34 +126,56 @@ input[type=submit] {
     font-weight: bolder;
 }
 
-/*Styling the form into two columns*/
-.formDiv{
-    width: 50%;
-    float: left;
-    position: relative;
-    text-align: center;
+/*Mobile and Small Viewports*/
+@media only screen and (max-width: 600px){
+    /*Display the menu button*/
+    .mobileMenu{
+        display: block;
+    }
+
+    /*Do not display menu unless triggered by event handler (will write JS later)*/
+    .navDiv{
+        display: none;
+    }
+
+    .navExpanded{
+        display: block;
+    }
+
+    #submitButtonDiv{
+        text-align: center;
+    }
+
+    #submitButton{
+        width: 50%;
+    }
+
+    .formDiv{
+        padding: 2%;
+    }
+
+    #storyInputDiv{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
 }
 
-#storyInputDiv{
-    text-align: center;
-}
+/*Medium and Large ViewPorts*/
+@media only screen and (min-width: 600px){
+    .expectations, .expectationsText, .expectationsDisclaimer{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
-#submitButtonDiv{
-    text-align: center;
-}
+    #dontFret{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
-#storyAndSubmitWrapper{
-    width: 100%;
-    height: 500px;
-    display: block;
-}
-
-#questionDiv{
-    width: 100%;
-    height: 400px;
-    display: block;
-}
-
-#storyLabel{
-    font-size: 30px;
+    #submitButtonDiv{
+        text-align: center;
+    }
+    #submitButton{
+        width: 10%;
+    }
 }
