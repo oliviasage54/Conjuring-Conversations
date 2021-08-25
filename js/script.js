@@ -1,4 +1,3 @@
-  
 /*Script for the navigation link changing when you are on that page*/
 /*Home page link*/
 var homePageLink = document.getElementById("homeLink");
@@ -30,5 +29,5 @@ else if(document.URL.includes("shop.html")){
     
 }
 else if(document.URL.includes("submissions.html")){
-    
+
 }
