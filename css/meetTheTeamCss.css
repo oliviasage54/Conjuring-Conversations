@@ -14,7 +14,6 @@ h3{
     font-size: 26px;
 }
 
-/*Member detail cards*/
 .memberCard{
     text-align: center;
     display: absolute;
@@ -85,6 +84,7 @@ h3{
         padding-right: 3%;
     }
 }
+
 
 /*medium-large*/
 @media only screen and (min-width: 600px){
