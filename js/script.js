@@ -29,5 +29,5 @@ else if(document.URL.includes("shop.html")){
     
 }
 else if(document.URL.includes("submissions.html")){
-    
+
 }
