@@ -17,17 +17,17 @@ var shopDiv = document.getElementById("sh");
 
 
 if(document.URL.includes("index.html")){
-    
+    homePageLink.style.textDecoration = "underline";
 }
 else if(document.URL.includes("episodes.html")){
-    
+    episodesPageLink.style.textDecoration = "underline";
 }
 else if(document.URL.includes("meetTheTeam.html")){
-    
+    meetTeamPageLink.style.textDecoration = "underline";
 }
 else if(document.URL.includes("shop.html")){
-    
+    shopPageLink.style.textDecoration = "underline";
 }
 else if(document.URL.includes("submissions.html")){
-
+    submissionsPageLink.style.textDecoration ="underline";
 }

@@ -65,19 +65,19 @@ include_once dbh.php;
               <div class="col-3" id="leftSideDiv">
                 <div id="submissionsNameInputDiv" class="formDiv">
                   <label class="formLabel" id="submissionsNameLabel">What's your name?*</label>
-                  <input type="text" name="name" class="inputBox" required>
+                  <input type="text" name="name" class="inputBox" placeholder="Ghosty McGhost" required>
                 </div>
                 <div id="preferredNameInputDiv" class="formDiv">
                   <label class="formLabel" id="preferredNameLabel">What should we call you?</label>
-                  <input type="text" name="preferredName" class="inputBox">
+                  <input type="text" name="preferredName" class="inputBox" placeholder="ghostie">
                 </div>
                 <div id="pronounsInputDiv" class="formDiv">
                   <label class="formLabel" id="pronounsLabel">What are your pronouns?</label>
-                  <input type="text" name="pronouns" class="inputBox">
+                  <input type="text" name="pronouns" class="inputBox" placeholder="She/her, they/them, he/him...etc">
                 </div>
                 <div id="ageInputDiv" class="formDiv">
-                  <label class="formLabel" id="ageLabel">How old are you?</label>
-                  <input type="text" name="age" class="inputBox">
+                  <label class="formLabel" id="ageLabel">How old are you?*</label>
+                  <input type="text" name="age" class="inputBox" placeholder="0" required>
                 </div>
               </div>
 
@@ -88,20 +88,20 @@ include_once dbh.php;
               <div class="col-3" id="rightSideDiv">
                 <div id="submissionsEmailInputDiv" class="formDiv">
                   <label class="formLabel" id="submissionsEmailLabel">What's your email?*</label>
-                  <input type="email" name="email" class="inputBox" required>
+                  <input type="email" name="email" class="inputBox" placeholder="ghostie@ghostmail.com" required>
                 </div>
                 <div id="phoneNumberInputDiv" class="formDiv">
                   <label class="formLabel" id="phoneNumberLabel">What's your phone number?*</label>
-                  <input type="text" name="phoneNumber" class="inputBox" required>
+                  <input type="text" name="phoneNumber" class="inputBox" placeholder="000-000-0000" required>
                 </div>
                 <div id="socialsInputDiv" class="formDiv">
                   <label class="formLabel" id="socialsLabel">Where can we find you on social media?</label>
-                  <input type="text" name="socials" class="inputBox">
+                  <input type="text" name="socials" class="inputBox" placeholder="Example: 'instagram: @ghost, twitter: @ghost'...">
                 </div>
                 <div id="taggingInputDiv" class="formDiv">
                   <label class="formLabel" id="taggingLabel">Would you like to be tagged on social media when your episode comes out?</label>
-                  <input type="radio" name="taggingPreference" id="yesValue" value="Yes"><p class="value">Yes</p>
-                  <input type="radio" name="taggingPreference" id="noValue" value="No"><P class="value">No</P>
+                  <div class="radioButtons"><input type="radio" name="taggingPreference" id="yesValue" value="Yes"><p class="value">Yes</p></div>
+                  <div class="radioButtons"><input type="radio" name="taggingPreference" id="noValue" value="No"><P class="value">No</p></div>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ include_once dbh.php;
             <div id="storyAndSubmitWrapper" class="row">
               <div id="storyInputDiv" class="col-8">
                 <label class="formLabel" id="storyLabel">Tell us your story!</label>
-                <textarea name="story" id="storyTextArea" placeholder="Start typing here..."></textarea>
+                <textarea name="story" id="storyTextArea" placeholder="Start typing here...put as many details as you want!"></textarea>
               </div>
             </div>
             <div id="submitButtonDiv">

@@ -1,6 +1,7 @@
 /*This is the stylesheet for the about the team page*/
 @import "universal.css";
 
+/*universal page styles*/
 p, h3, h4{
     color: white;
 }
@@ -13,16 +14,6 @@ h3{
     font-size: 26px;
 }
 
-/* Member card class 
-#ryan, #sofi, #mike{
-    margin-left: 200px;
-}
-
-#olivia, #cameren{
-    margin-left: 200px;
-}
-*/
-
 .memberCard{
     text-align: center;
     display: absolute;
@@ -31,72 +22,132 @@ h3{
     background-color: #e0e8d4;
 }
 
+/*Description section for each member. contains name, occupation, bio*/
 .textDiv{
-    float: left;
     position: relative;
-    width: 50%;
 }
 
+/*Div containing each member's portrait*/
 .pictureDiv{
-    float: left;
     position: relative;
-    width: 50%;
 }
 
-.memberName{
+/*Paragraph element for each member's name and occupation*/
+.memberName, .memberPosition{
     font-family: 'Yomogi', cursive;
     text-transform: uppercase;
     color: black;
     font-weight: bold;
 }
 
-.memberPosition{
-    font-family: 'Yomogi', cursive;
-    text-transform: uppercase;
-    font-size: 24px;
-    color: black;
-    font-weight: bold;
-    margin-top: 0px;
-}
-
+/*Paragraph element for every member's bio*/
 .memberDescription{
     font-family: 'Special Elite', cursive;
     font-weight: 550;
-    line-height: 1.6em;
-    font-size: 16px;
     color: black;
+    line-height: 1.6em;
 }
 
-#teamSection{
+/*section div containing all team member cards*/
+.teamSection{
     height: 100%;
     width: 100%;
     margin: auto;
     text-align: center;
-    margin-top: 60px;
 }
-
-.memberImages{
-    float: left;
-    margin-top: 50px;
-} 
 
 /*Mobile and Small Viewports*/
 @media only screen and (max-width: 600px){
+    .pictureDiv, .textDiv{
+        width: 100%;
+        height: auto;
+    }
 
-}
-
-/*Medium and Large ViewPorts*/
-@media only screen and (min-width: 600px){
     .memberCard{
-        height: 420px;
-        width: 600px;
-        padding-right: 45px;
-        margin-bottom: 100px;
+        height: auto;
+        width: 100%;
+        margin-top: 15px;
     }
 
     .memberName{
-        margin-top: 50px;
+        font-size: 28px;
+        margin: 2px;
+    }
+
+    .memberPosition{
+        font-size: 24px;
+        margin: 2px;
+    }
+
+    .textDiv{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+/*medium-large*/
+@media only screen and (min-width: 600px){
+    .pictureDiv, .textDiv{
+        width: 100%;
+        height: auto;
+    }
+
+    .memberImages{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 4%;
+        padding: 0;
+    }
+
+    .textDiv{
+        padding: 4%;
+    }
+
+    .memberName{
+        font-size: 28px;
+        margin: 2px;
+    }
+
+    .memberPosition{
+        font-size: 24px;
+        margin: 2px;
+    }
+
+    .memberCard{
+        margin-bottom: 15px;
+    }
+}
+
+/*x large*/
+@media only screen and (min-width: 1200px){
+    .pictureDiv, .textDiv{
+        float: left;
+        width: 100%;
+    }
+
+    .memberCard{
+        height: 650px;
+        margin-bottom: 5%;
+    }
+
+    .memberName{
         font-size: 28px;
         margin-bottom: 0px;
+    }
+
+    .memberPosition{
+        font-size: 24px;
+        margin-top: 0px;
+    }
+
+    .memberDescription{
+        font-size: 16px;
+    }
+
+    .teamSection{
+        margin-top: 60px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
