@@ -1,9 +1,104 @@
 /*This is the stylesheet for the episodes page*/
 @import "universal.css";
 
-
 /*Episode Tile Styling*/
 .episodeTileWrapper{
-    background-color: red;
+    
+}
+
+#episodeSection{
+    margin-top: 2%;
+}
+
+.episodeImageDiv{
+    border: 2px solid white;
+}
+
+.descriptionWrapper{
+    background-color:#e0e8d4;
+    padding-top: 7%;
+    padding-bottom: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/*Description Styling*/
+.episodeTitle{
+    font-family: "Special Elite", cursive;
+}
+
+.episodeDescription{
+    font-family: "Special Elite", cursive;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.releaseDate{
+    font-family: "Special Elite", cursive;
+    font-weight: bold;
+}
+
+/*Description wrapper spacing*/
+.titleDiv{
+    height: 25px;
+    width: 100%;
+}
+
+.dateDiv{
+    height: 25px;
+    width: 100%;
+}
+
+.descriptionDiv{
+    height: 50px;
+    width: 100%;
+}
+
+/*Mobile and Small Viewports*/
+@media only screen and (max-width: 600px){
+    .episodeImageDiv{
+        height: 300px;
+    }    
+
+    #episodeSection{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .episodeTileWrapper{
+        margin-bottom: 5%;
+    }
+}
+
+/*Medium and Large ViewPorts*/
+@media only screen and (min-width: 600px){
+    #episodeSection{
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .episodeTileWrapper{
+        width: 30%;
+        height: 100%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+
+    .episodeImageDiv{
+        height: 300px;    
+    }
+
+    .descriptionWrapper{
+        height: 200px;
+    }
+
+    /*Description Styling*/
+    .episodeDescription{
+        font-size: 14px;
+    }
 }
 

@@ -13,7 +13,7 @@ h3{
     font-size: 26px;
 }
 
-/* Member card class */
+/* Member card class 
 #ryan, #sofi, #mike{
     margin-left: 200px;
 }
@@ -21,18 +21,14 @@ h3{
 #olivia, #cameren{
     margin-left: 200px;
 }
-
+*/
 
 .memberCard{
-    height: 420px;
-    width: 600px;
     text-align: center;
     display: absolute;
     float: left;
     overflow: hidden;
     background-color: #e0e8d4;
-    padding-right: 45px;
-    margin-bottom: 100px;
 }
 
 .textDiv{
@@ -50,11 +46,8 @@ h3{
 .memberName{
     font-family: 'Yomogi', cursive;
     text-transform: uppercase;
-    margin-top: 50px;
-    font-size: 28px;
     color: black;
     font-weight: bold;
-    margin-bottom: 0px;
 }
 
 .memberPosition{
@@ -87,6 +80,23 @@ h3{
     margin-top: 50px;
 } 
 
-.picture{
+/*Mobile and Small Viewports*/
+@media only screen and (max-width: 600px){
 
+}
+
+/*Medium and Large ViewPorts*/
+@media only screen and (min-width: 600px){
+    .memberCard{
+        height: 420px;
+        width: 600px;
+        padding-right: 45px;
+        margin-bottom: 100px;
+    }
+
+    .memberName{
+        margin-top: 50px;
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
 }
