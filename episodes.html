@@ -11,6 +11,7 @@ include_once dbh.php;
       <title>Episodes</title>
       <link rel="stylesheet" href="css/episodes.css" type="text/css"/>
       <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -19,11 +20,11 @@ include_once dbh.php;
       <!--Navigation Section-->
       <div class="navDiv row">
         <ul class="navUL col-12">
-            <div class="navItemDiv"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink">Home</a></li></div>
-            <div class="navItemDiv"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink">Episodes</a></li></div>
-            <div class="navItemDiv"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink">Submissions</a></li></div>
-            <div class="navItemDiv"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink">About the Team</a></li></div>
-            <div class="navItemDiv"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink">Shop</a></li></div> 
+            <div class="navItemDiv" id="h"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink" id="homeLink">Home</a></li></div>
+            <div class="navItemDiv" id="e"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink" id="episodesLink">Episodes</a></li></div>
+            <div class="navItemDiv" id="su"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink" id="subLink">Submissions</a></li></div>
+            <div class="navItemDiv" id="m"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink" id="teamLink">About the Team</a></li></div>
+            <div class="navItemDiv" id="sh"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink" id="shopLink">Shop</a></li></div> 
         </ul>
       </div>
 
@@ -32,39 +33,57 @@ include_once dbh.php;
   
           <div class="row" id="episodes">
 
-            <div class="episodeTileWrapper col-3">
+            <div class="episodeTileWrapper col-4">
               <div class="episodeImageDiv">
                 <img src="" alt="episode title here" width="300" height="300">
               </div>
               <div class="descriptionWrapper">
-                <h3 class="episodeTitle">Episode Title Here</h3> 
-                <h6 class="episodeDescription">Episode Description/Show notes</h6>
+                <div class="titleDiv">
+                  <h3 class="episodeTitle">Episode Title Here</h3>
+                </div>
                 <!--Release date goes below-->
-                <date class="releaseDate">00/00/0000</date>
+                <div class="dateDiv">
+                  <date class="releaseDate">12/12/2012</date>
+                </div>
+                <div class="descriptionDiv"><h6 class="episodeDescription">Episode Description/Show notes Episode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notes
+                  Episode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notes
+                </h6></div>
               </div>
             </div>
 
-            <div class="episodeTileWrapper col-3">
+            <div class="episodeTileWrapper col-4">
               <div class="episodeImageDiv">
                 <img src="" alt="episode title here" width="300" height="300">
               </div>
               <div class="descriptionWrapper">
-                <h3 class="episodeTitle">Episode Title Here</h3> 
-                <h6 class="episodeDescription">Episode Description/Show notes</h6>
+                <div class="titleDiv">
+                  <h3 class="episodeTitle">Episode Title Here</h3>
+                </div>
                 <!--Release date goes below-->
-                <date class="releaseDate">00/00/0000</date>
+                <div class="dateDiv">
+                  <date class="releaseDate">12/12/2012</date>
+                </div>
+                <div class="descriptionDiv"><h6 class="episodeDescription">Episode Description/Show notes Episode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notes
+                  Episode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notes
+                </h6></div>
               </div>
             </div>
 
-            <div class="episodeTileWrapper col-3">
+            <div class="episodeTileWrapper col-4">
               <div class="episodeImageDiv">
                 <img src="" alt="episode title here" width="300" height="300">
               </div>
               <div class="descriptionWrapper">
-                <h3 class="episodeTitle">Episode Title Here</h3> 
-                <h6 class="episodeDescription">Episode Description/Show notes</h6>
+                <div class="titleDiv">
+                  <h3 class="episodeTitle">Episode Title Here</h3>
+                </div>
                 <!--Release date goes below-->
-                <date class="releaseDate">00/00/0000</date>
+                <div class="dateDiv">
+                  <date class="releaseDate">12/12/2012</date>
+                </div>
+                <div class="descriptionDiv"><h6 class="episodeDescription">Episode Description/Show notes Episode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notes
+                  Episode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notesEpisode Description/Show notes
+                </h6></div>
               </div>
             </div> 
 
@@ -72,6 +91,7 @@ include_once dbh.php;
         
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="js/script.js"></script>
     </body>
 
 </html>
