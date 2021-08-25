@@ -85,8 +85,11 @@ label{
 }
 
 /*Radio Buttons*/
-#yesValue, #noValue{
-    margin-left: 2%;
+
+.radioButtons{
+    display: inline;
+    float: left;
+    height: auto;
 }
 
 input[type=radio]{
@@ -177,5 +180,6 @@ input[type=radio]{
     }
     #submitButton{
         width: 10%;
+        cursor: pointer;
     }
 }
