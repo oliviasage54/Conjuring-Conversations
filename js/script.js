@@ -31,3 +31,13 @@ else if(document.URL.includes("shop.html")){
 else if(document.URL.includes("submissions.html")){
     submissionsPageLink.style.textDecoration ="underline";
 }
+
+/*Mobile Navigation onmousedown event listener function*/
+Function toggleMenu(){
+    var menuItems = document.getElementById("menu");
+    if(menuItems.style.display === "block") {
+        menuItems.style.display = "none";
+    } else{
+        menuItems.style.display = "block";
+    }
+}
