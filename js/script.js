@@ -34,13 +34,10 @@ else if(document.URL.includes("submissions.html")){
 
 /*Mobile Navigation onmousedown event listener function*/
 Function toggleMenu(){
-    var menuItems = document.getElementsByClassName("navItemDiv");
-    if(menuItems[0].style.display === "none"){
-        menuItems[0].style.display = "block";
-        menuItems[1].style.display = "block";
-        menuItems[2].style.display = "block";
-        menuItems[3].style.display = "block";
-        menuItems[4].style.display = "block";
+    var menuItems = document.getElementById("menu");
+    if(menuItems.style.display === "block") {
+        menuItems.style.display = "none";
+    } else{
+        menuItems.style.display = "block";
     }
-
 }
