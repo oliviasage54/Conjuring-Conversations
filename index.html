@@ -21,17 +21,26 @@ include_once dbh.php;
 
     <body>
         <!--mobile menu opener-->
-        <span class="mobileMenu"><ion-icon name="menu-sharp"></ion-icon></span>
-        <!--Navigation Section-->
-        <div class="navDiv row">
-            <ul class="navUL col-12">
-                <div class="navItemDiv" id="h"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink" id="homeLink">Home</a></li></div>
-                <div class="navItemDiv" id="e"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink" id="episodesLink">Episodes</a></li></div>
-                <div class="navItemDiv" id="su"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink" id="subLink">Submissions</a></li></div>
-                <div class="navItemDiv" id="m"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink" id="teamLink">About the Team</a></li></div>
-                <div class="navItemDiv" id="sh"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink" id="shopLink">Shop</a></li></div> 
-            </ul>
-          </div>
+      <div class="mobileMenu">
+        <ion-icon id="menuIcon" name="menu-sharp" ></ion-icon>
+        <ul class="navUL col-12">
+            <div class="navItemDiv" id="h"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink" id="homeLink">Home</a></li></div>
+            <div class="navItemDiv" id="e"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink" id="episodesLink">Episodes</a></li></div>
+            <div class="navItemDiv" id="su"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink" id="subLink">Submissions</a></li></div>
+            <div class="navItemDiv" id="m"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink" id="teamLink">About the Team</a></li></div>
+            <div class="navItemDiv" id="sh"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink" id="shopLink">Shop</a></li></div> 
+        </ul>
+    </div>
+      <!--Navigation Section-->
+      <div class="navDiv row">
+        <ul class="navUL col-12">
+            <div class="navItemDiv" id="h"><li id="homePageLI" class="navTabLI"><a href="index.html" class="navLink" id="homeLink">Home</a></li></div>
+            <div class="navItemDiv" id="e"><li id="episodesPageLI" class="navTabLI"><a href="episodes.html" class="navLink" id="episodesLink">Episodes</a></li></div>
+            <div class="navItemDiv" id="su"><li id="contactPageLI" class="navTabLI"><a href="submissions.html" class="navLink" id="subLink">Submissions</a></li></div>
+            <div class="navItemDiv" id="m"><li id="meetTheTeamPageLI" class="navTabLI"><a href="meetTheTeam.html" class="navLink" id="teamLink">About the Team</a></li></div>
+            <div class="navItemDiv" id="sh"><li id="shopLI" class="navTabLI"><a href="shop.html" class="navLink" id="shopLink">Shop</a></li></div> 
+        </ul>
+      </div>
         
         <!--Welcome Section-->
         <div id="welcomeDiv" class="row">
@@ -114,5 +123,12 @@ include_once dbh.php;
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="js/script.js"></script>
+        <script type="text/javascript">
+            $(".navDiv").slideToggle();
+            $("#mobileMenu").click(function(){
+                $("navDiv").slideToggle();
+            });
+
+        </script>
     </body>
 </html>

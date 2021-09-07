@@ -31,3 +31,15 @@ else if(document.URL.includes("shop.html")){
 else if(document.URL.includes("submissions.html")){
     submissionsPageLink.style.textDecoration ="underline";
 }
+
+
+/*const menuToggle = () => {
+    const hamburger = document.querySelector('.menuIcon');
+    const navigation = document.querySelector('navUL');
+
+    hamburger.addEventListener('click', () => {
+        navigation.classList.slideToggle('nav-active');
+    });
+}
+onclick="menuToggle();" touchstart="menuToggle();"
+menuToggle();*/
