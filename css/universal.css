@@ -131,6 +131,10 @@ a{
     transform: scaleX(1);
 }
 
+#hiddenMenu{
+    display: none;
+}
+
 /*Mobile and Small Viewports*/
 @media only screen and (max-width: 600px){
     /*handling the overflow for the transformation*/
