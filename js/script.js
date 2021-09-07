@@ -33,13 +33,10 @@ else if(document.URL.includes("submissions.html")){
 }
 
 
-/*const menuToggle = () => {
-    const hamburger = document.querySelector('.menuIcon');
-    const navigation = document.querySelector('navUL');
+/*Menu responsive code*/
+const hamburger = document.getElementById('menuIcon');
+const navUL = document.getElementById('navUL');
 
-    hamburger.addEventListener('click', () => {
-        navigation.classList.slideToggle('nav-active');
-    });
-}
-onclick="menuToggle();" touchstart="menuToggle();"
-menuToggle();*/
+hamburger.addEventListener('click', () =>{
+    navUL.classList.toggle('show');
+});

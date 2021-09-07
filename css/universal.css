@@ -79,6 +79,8 @@ body{
     list-style: none;
     white-space: nowrap;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Divs for the individual tab items on the nav bar*/
@@ -145,7 +147,7 @@ a{
     /*Display the menu button*/
     .mobileMenu{
         display: inline;
-        height: 100px;
+        height: auto;
         width: 100%;
     }
 
@@ -162,8 +164,13 @@ a{
         align-items: center;
         background-color: black;
         margin-top: 0;
+        height: auto;
         transform: translateX(100%);
-        transition: transform 1s ease-out;
+        transition: transform .75s ease-out;
+    }
+
+    .navUL.show{
+        transform: translateX(0%);
     }
 
     .navUL li{

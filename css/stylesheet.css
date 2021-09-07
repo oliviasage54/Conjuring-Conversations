@@ -57,15 +57,6 @@ overlap this div with the rotating art, but thats future state*/
         display: block;
     }
 
-    /*Do not display menu unless triggered by event handler (will write JS later)*/
-    .navDiv{
-        display: none;
-    }
-
-    .navExpanded{
-        display: block;
-    }
-
     /*First Description paragraph, separated for ease of reading*/
     #podcastDescriptionP1, #podcastDescriptionP2{
         font-size: 20px;
