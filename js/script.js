@@ -35,8 +35,14 @@ else if(document.URL.includes("submissions.html")){
 
 /*Menu responsive code*/
 const hamburger = document.getElementById('menuIcon');
+const closeMenu = document.getElementById('closeNav');
 const navUL = document.getElementById('navUL');
 
 hamburger.addEventListener('click', () =>{
+    navUL.classList.toggle('show');
+});
+
+
+closeMenu.addEventListener('click', () =>{
     navUL.classList.toggle('show');
 });

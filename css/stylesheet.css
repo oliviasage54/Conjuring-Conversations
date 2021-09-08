@@ -140,6 +140,7 @@ overlap this div with the rotating art, but thats future state*/
 
     .listenDiv{
         display: inline;
+        margin-right: 20px;
     }
 
     #allEpisodesLink, #findUsText{
@@ -221,7 +222,6 @@ overlap this div with the rotating art, but thats future state*/
 .listenDiv{
     text-decoration: none;
     margin-bottom: 20px;
-    margin-right: 20px;
 }
 
 /*Links for the streaming services*/
