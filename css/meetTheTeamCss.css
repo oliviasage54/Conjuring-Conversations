@@ -27,9 +27,8 @@ h3{
     position: relative;
 }
 
-/*Div containing each member's portrait*/
-.pictureDiv{
-    position: relative;
+.picture{
+    z-index: 0;
 }
 
 /*Paragraph element for each member's name and occupation*/
