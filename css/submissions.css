@@ -136,15 +136,11 @@ input[type=radio]{
         display: block;
     }
 
-    /*Do not display menu unless triggered by event handler (will write JS later)*/
+    /*Do not display menu unless triggered by event handler (will write JS later)
     .navDiv{
         display: none;
     }
-
-    .navExpanded{
-        display: block;
-    }
-
+    */
     #submitButtonDiv{
         text-align: center;
     }
